@@ -1,3 +1,15 @@
+.marketing-bg-1{
+  background-image: url("../img/events-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 222;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
 .marketing {
   background-image: url("../img/marketing-bg.jpg");
   background-size: cover;
@@ -16,6 +28,7 @@
     display: inline-block;
     margin-top: 100px;
     margin-right: 204px;
+    cursor: pointer;
     &:nth-child(4){
       margin-right: 0;
     }
