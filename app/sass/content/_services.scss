@@ -1,4 +1,4 @@
-.marketing{
+.marketing {
   background-image: url("../img/marketing-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,4 +7,44 @@
   position: relative;
   float: left;
   width: 100%;
+  .marketing__nav ul {
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 204px;
+    &:nth-child(4){
+      margin-right: 0;
+    }
+    a {
+      color: #fff;
+      font-family: $gothamLight;
+      font-size: 24px;
+      display: inline-block;
+      height: 40px;
+      &:hover{
+        font-family: $GothamBlack;
+        transition: 300ms ease;
+        border-bottom: 3px solid #3dfbe5;
+
+      }
+
+    }
+    .active{
+      font-family: $GothamBlack;
+      border-bottom: 3px solid #3dfbe5;
+    }
+
+
+  }
+  .marketing__content{
+    display: block;
+    position: relative;
+    width: 50%;
+    float: left;
+    margin-top: 200px;
+  }
 }
