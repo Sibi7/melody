@@ -10,8 +10,45 @@
 	
 }
 
-@media only screen and (max-width: 736px) {
-	
+@media only screen and (max-width: 670px) {
+  .head .head-icons {
+    margin-right: 0;
+    width: 100%;
+  }
+  .head .head-icons__callback {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .head .head-icons span {
+    margin-top: 10px;
+  }
+  .home .melody-lab-bg {
+    top: 173px;
+
+  }
+  .home .melody-lab-bg img {
+    height: 100px;
+  }
+  .home .melody-note {
+    position: absolute;
+    right: 66px;
+    top: 173px;
+  }
+  .home .melody-note img{
+    height: 100px;
+  }
+  .home p {
+    width: 100%;
+    top: 300px;
+    font-size: 100%;
+    text-align: center;
+    left: -1px;
+    margin-top: 30px;
+  }
+  .footer .nav li:nth-child(2) {
+    margin: 0px 29px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
