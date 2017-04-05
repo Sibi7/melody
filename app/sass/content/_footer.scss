@@ -1,0 +1,45 @@
+.footer{
+  position: fixed;
+  bottom: 40px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  display: block;
+  float: left;
+  z-index: 3;
+  .nav{
+    position: absolute;
+    top: -50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      font-size: 20px;
+      font-family: $gothamLight;
+      line-height: 30px;
+      a{
+        color: #fff;
+      }
+      &:nth-child(2){
+        margin: 0 446px;
+      }
+      .active{
+        color: #3dfbe5;
+      }
+
+    }
+
+  }
+  .pull{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    background-color: #3dfbe5;
+    position: absolute;
+    z-index: 15;
+    top: -7px;
+    left: 35px;
+  }
+}

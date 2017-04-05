@@ -1,0 +1,35 @@
+.home {
+  background-image: url("../img/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  p {
+    width: 600px;
+    position: absolute;
+    top: 410px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .melody-lab-bg{
+    position: absolute;
+    left: -27%;
+    top: 120px;
+    img{
+      height: 275px;
+    }
+  }
+  .melody-note{
+    position: absolute;
+    right: 20%;
+    top: 100px;
+    img{
+      height: 500px;
+    }
+  }
+ }
+
