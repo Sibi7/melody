@@ -20,6 +20,10 @@
       line-height: 30px;
       a{
         color: #fff;
+        &:hover{
+          color: #3dfbe5;
+          transition: 300ms ease;
+        }
       }
       &:nth-child(2){
         margin: 0 446px;
