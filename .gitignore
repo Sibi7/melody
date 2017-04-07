@@ -49,3 +49,4 @@ Temporary Items
 .idea
 package.json
 /node_modules
+gulpfile.js
