@@ -28,7 +28,12 @@
       float: left;
       height: 200px;
       margin-right: 20px;
+      cursor: pointer;
       border-radius: 5px;
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease;
+      }
     }
     &__block1{
       width: 39%;
@@ -37,6 +42,11 @@
       height: 90px;
       float: left;
       border-radius: 5px;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease;
+      }
     }
     &__block2{
       width: 16%;
@@ -44,12 +54,19 @@
       margin-bottom: 20px;
       float: left;
       height: 90px;
+      cursor: pointer;
       border-radius: 5px;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease;
+      }
     }
     &__block3{
       display: block;
       float: left;
       position: relative;
+      cursor: pointer;
       width: 39%;
       background-color: #fff;
       border-radius: 5px;
@@ -59,6 +76,10 @@
       &:last-child{
         margin-right: 0;
         margin-left: 0;
+      }
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease;
       }
     }
   }
@@ -84,7 +105,12 @@
       height: 218px;
       border-radius: 5px;
       background-color: #fff;
+      cursor: pointer;
       float: left;
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease;
+      }
     }
     &__block1{
       width: 47%;
@@ -94,15 +120,22 @@
       background-color: #fff;
       margin-right: 20px;
       float: left;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease;
+      }
     }
     &__block1:nth-child(2n){
       margin-right: 0;
     }
+
   }
   &__center{
     width: 100%;
     position: relative;
     float: left;
+    margin-top: 2%;
     display: block;
     &__text{
       width: 36%;
@@ -121,8 +154,13 @@
       border-radius: 5px;
       height: 90px;
       margin-right: 20px;
+      cursor: pointer;
       &:last-child{
         margin-right: 0;
+      }
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease;
       }
 
   }
