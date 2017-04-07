@@ -1,81 +1,73 @@
-.marketing-bg-1{
-  background-image: url("../img/events-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  z-index: 222;
-  display: block;
-  position: relative;
-  float: left;
-  width: 100%;
-}
-
 .marketing {
-  background-image: url("../img/marketing-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
   display: block;
   position: relative;
   float: left;
   width: 100%;
-  .marketing__nav ul {
-    text-align: center;
-    display: inline-block;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    margin-top: 100px;
-    margin-right: 204px;
-    cursor: pointer;
-    &:nth-child(4){
-      margin-right: 0;
-    }
-    a {
-      color: #fff;
-      font-family: $gothamLight;
-      font-size: 24px;
+  .marketing__nav {
+    position: relative;
+    display: block;
+    z-index: 2;
+    float: left;
+    ul {
+      text-align: center;
       display: inline-block;
-      margin-bottom: 20px;
-      height: 40px;
-      &:hover{
-        font-family: $GothamBlack;
-        transition: 300ms ease;
-        transform: scale(1.03);
-        border-bottom: 3px solid #3dfbe5;
+      padding: 0;
+      z-index: 2;
+      li {
+        display: inline-block;
+        margin-top: 100px;
+        margin-right: 204px;
+        cursor: pointer;
+        &:nth-child(4) {
+          margin-right: 0;
+        }
+        a {
+          color: #fff;
+          font-family: $gothamLight;
+          font-size: 24px;
+          display: inline-block;
+          margin-bottom: 20px;
+          height: 40px;
+          border-bottom: 3px solid transparent;
+          &:hover {
+            font-family: $GothamBlack;
+            transition: 300ms ease;
+            transform: scale(1.03);
+            border-bottom: 3px solid #3dfbe5;
+
+          }
+
+        }
+        .active {
+          font-family: $GothamBlack;
+          border-bottom: 3px solid #3dfbe5;
+        }
 
       }
-
     }
-    .active{
-      font-family: $GothamBlack;
-      border-bottom: 3px solid #3dfbe5;
-    }
-
-
   }
-  .marketing__content{
+
+  .marketing__content {
     display: block;
     position: relative;
     width: 50%;
     float: left;
     margin-top: 0px;
-    .marketing__content__text{
+    .marketing__content__text {
       margin-left: 30px;
-      h1{
+      h1 {
         margin-left: 30px;
         color: #fff;
         font-size: 30px;
         font-family: $GothamReg;
       }
-      p{
+      p {
         color: #fff;
         font-size: 16px;
         font-family: $GothamReg;
         line-height: 30px;
       }
-      button{
+      button {
         width: 200px;
         height: 50px;
         background-color: #3dfbe5;
@@ -84,13 +76,13 @@
         font-family: $gothamLight;
         font-size: 16px;
         margin: 20px 0;
-        &:hover{
+        &:hover {
           border: none;
         }
       }
     }
 
-    button{
+    button {
       width: 100px;
       height: 35px;
       border-radius: 30px;
@@ -101,17 +93,17 @@
       background-color: transparent;
       color: #fff;
       cursor: pointer;
-      &:hover{
+      &:hover {
         border: 1px solid #fff;
         transition: 300ms ease;
         transform: scale(1.03);
       }
 
     }
-    .active{
+    .active {
       border: 1px solid #fff;
     }
-    .marketing__content_wrap-item{
+    .marketing__content_wrap-item {
       width: 48%;
       height: 120px;
       background-color: #fff;
@@ -121,10 +113,48 @@
       box-sizing: border-box;
       margin-right: 10px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         transform: scale(1.03);
         transition: 300ms ease;
       }
     }
+  }
+  .tab_content {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-top: -195px;
+    padding-top: 195px;
+    @include box-sizing(border-box);
+    z-index: 1;
+  }
+  #tab1 {
+    background-image: url("../img/marketing-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+  }
+
+  #tab2{
+    background-image: url("../img/events-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  #tab3{
+    background-image: url("../img/digital-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  #tab4{
+    background-image: url("../img/media-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 }
