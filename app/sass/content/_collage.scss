@@ -30,6 +30,16 @@
       margin-right: 20px;
       cursor: pointer;
       border-radius: 5px;
+      a{
+        display: inline-block;
+        text-align: center;
+        background-color: #13f1d7;
+        border-radius: 50%;
+        padding: 25px 25px;
+        margin-left: 40%;
+        margin-top: 17%;
+        color: #fff;
+      }
       &:hover{
         transform: scale(1.03);
         transition: 300ms ease;
@@ -61,6 +71,7 @@
         transform: scale(1.03);
         transition: 300ms ease;
       }
+
     }
     &__block3{
       display: block;
@@ -76,6 +87,17 @@
       &:last-child{
         margin-right: 0;
         margin-left: 0;
+      }
+      a{
+        display: inline-block;
+        text-align: center;
+        background-color: #13f1d7;
+        border-radius: 50%;
+        padding: 10px 10px;
+        font-size: 14px;
+        margin-left: 43%;
+        margin-top: 11%
+        color: #fff;
       }
       &:hover{
         transform: scale(1.03);
@@ -111,6 +133,16 @@
         transform: scale(1.03);
         transition: 300ms ease;
       }
+      a{
+        display: inline-block;
+        text-align: center;
+        background-color: #13f1d7;
+        border-radius: 50%;
+        padding: 25px 25px;
+        margin-left: 33%;
+        margin-top: 42%;
+        color: #fff;
+      }
     }
     &__block1{
       width: 47%;
@@ -121,6 +153,17 @@
       margin-right: 20px;
       float: left;
       cursor: pointer;
+      a{
+        display: inline-block;
+        text-align: center;
+        background-color: #13f1d7;
+        border-radius: 50%;
+        padding: 10px 10px;
+        font-size: 14px;
+        margin-left: 43%;
+        margin-top: 9%;
+        color: #fff;
+      }
       &:hover{
         transform: scale(1.03);
         transition: 300ms ease;
@@ -155,6 +198,7 @@
       height: 90px;
       margin-right: 20px;
       cursor: pointer;
+
       &:last-child{
         margin-right: 0;
       }
@@ -165,5 +209,5 @@
 
   }
   }
-
+}
 }
