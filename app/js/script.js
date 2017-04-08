@@ -13,13 +13,15 @@ $(document).ready(function () {
         description:true
     });
 
-    $('.tabs a').click(function (e) {
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $('.tabs a').removeClass('active'); // удаляет класс у всех дочерних элем.
+    $('#menu a').click(function (e) {
+            $('#menu a').removeClass('active'); // удаляет класс у всех дочерних элем.
             $(this).addClass('active');
-        }
+    });
+
+
+    $('.tabs a').click(function (e) {
+        $('.tabs a').removeClass('active'); // удаляет класс у всех дочерних элем.
+        $(this).addClass('active');
     });
 
 
