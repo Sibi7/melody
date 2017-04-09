@@ -67,7 +67,7 @@ $(document).ready(function() { // зaпускaем скрипт пoсле зaг�
             function(){ // пoсле oкoнчaния пoкaзывaния oверлэя
                 $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
                     .css('display', 'block')
-                    .animate({opacity: 1, top: '50%'}, 200); // плaвнo пoкaзывaем
+                    .animate({opacity: 1, top: '0'}, 200); // плaвнo пoкaзывaем
             });
     });
 
@@ -85,41 +85,41 @@ $(document).ready(function() { // зaпускaем скрипт пoсле зaг�
 
 
 
-var layer, w, h;
-
-function init() {
-    w = (window.innerWidth  || document.documentElement.clientWidth)  * 0.5;
-    h = (window.innerHeight || document.documentElement.clientHeight) * 0.5;
-    layer = document.getElementById('melody-note');
-    parallaxMove();
-}
-
-function parallaxMove() {
-    var centerX = w - layer.offsetWidth  * 0.5;
-    var centerY = h - layer.offsetHeight * 0.5;
-
-    var x0 = layer.offsetLeft;
-    var y0 = layer.offsetTop;
-
-    function getX(e) {
-        return x0 + (e.pageX - centerX) * 0.2;
-    }
-
-    function getY(e) {
-        return y0 + (e.pageY - centerY) * 0.2;
-    }
-
-    document.onmousemove = function(e) {
-
-        var x = getX(e);
-        var y = getY(e);
-
-        layer.style.left = x + "px";
-         layer.style.top  = y + "px";
-
-    }
-
-}
-window.onload = function() {
-    init();
-}
+// var layer, w, h;
+//
+// function init() {
+//     w = (window.innerWidth  || document.documentElement.clientWidth)  * 0.5;
+//     h = (window.innerHeight || document.documentElement.clientHeight) * 0.5;
+//     layer = document.getElementById('melody-note');
+//     parallaxMove();
+// }
+//
+// function parallaxMove() {
+//     var centerX = w - layer.offsetWidth  * 0.5;
+//     var centerY = h - layer.offsetHeight * 0.5;
+//
+//     var x0 = layer.offsetLeft;
+//     var y0 = layer.offsetTop;
+//
+//     function getX(e) {
+//         return x0 + (e.pageX - centerX) * 0.2;
+//     }
+//
+//     function getY(e) {
+//         return y0 + (e.pageY - centerY) * 0.2;
+//     }
+//
+//     document.onmousemove = function(e) {
+//
+//         var x = getX(e);
+//         var y = getY(e);
+//
+//         layer.style.left = x + "px";
+//          layer.style.top  = y + "px";
+//
+//     }
+//
+// }
+// window.onload = function() {
+//     init();
+// }
