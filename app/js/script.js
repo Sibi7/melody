@@ -19,11 +19,16 @@ $(document).ready(function () {
     });
 
 
+    $('.marketing__content_wrap button').click(function (e) {
+        $('.marketing__content_wrap button').removeClass('active'); // удаляет класс у всех дочерних элем.
+        $(this).addClass('active');
+    });
+
+
     $('.tabs a').click(function (e) {
         $('.tabs a').removeClass('active'); // удаляет класс у всех дочерних элем.
         $(this).addClass('active');
     });
-
 
 });
 

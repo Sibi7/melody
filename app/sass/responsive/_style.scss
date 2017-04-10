@@ -34,6 +34,11 @@
     margin-right: 0;
     width: 100%;
   }
+  .about__block, .about__block__item {
+    position: relative;
+    display: none;
+    float: left;
+  }
   .head .head-icons__callback {
     margin-left: 0;
     width: 47%;
@@ -107,7 +112,6 @@
     width: 100%;
     line-height: 25px;
     text-align: center;
-    margin-top: -34px;
   }
 
   //end  section about
@@ -132,6 +136,7 @@
   .marketing .marketing__content {
     width: 100%;
   }
+
   .marketing .marketing__content .marketing__content__text {
     margin-left: 0;
     text-align: center;
@@ -142,7 +147,7 @@
     font-size: 20px;
   }
   .marketing .tab_content {
-    margin-top: -159px;
+    margin-top: -160px;
     padding-top: 144px;
   }
   .marketing .marketing__content .marketing__content__text p {
@@ -187,6 +192,64 @@
   }
 
   // end section contacts
+
+//  section collage
+
+  .collage__right__block {
+    display: none;
+  }
+
+  .collage__right__block1 {
+    display: none;
+  }
+  .collage__center__block {
+    display: none;
+  }
+  .collage__left {
+    width: 100%;
+    margin-top: 30%;
+    text-align: center;
+  }
+  .collage__left__text {
+    width: 100%;
+    line-height: inherit;
+  }
+  .collage__center__text {
+    width: 100%;
+    line-height: inherit;
+    padding-right: 0;
+  }
+  .collage__right__text {
+    width: 100%;
+    padding-top: 0;
+    line-height: inherit;
+    margin-bottom: 0;
+  }
+  .collage__center {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .collage__right {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .collage__left__block {
+    display: none;
+  }
+  .collage__left__block1 {
+    display: none;
+  }
+  .collage__left__block3 {
+    display: none;
+  }
+  .collage__left__block2 {
+    display: none;
+  }
+
+// end section collage
 
 }
 
