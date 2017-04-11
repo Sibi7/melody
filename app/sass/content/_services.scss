@@ -159,6 +159,18 @@
   }
 }
 
+#modal2 {
+  background-image: url('../img/modal-bg-d.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper-hover{
+    left: 18%;
+    .wrapper-title{
+      line-height: 64px;
+    }
+  }
+}
+
 #modal1 {
   background-image: url('../img/modal-bg.jpg');
   background-repeat: no-repeat;
