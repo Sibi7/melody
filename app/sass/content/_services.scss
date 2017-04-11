@@ -159,13 +159,73 @@
   }
 }
 
+#modal4 {
+  background-image: url('../img/modal-bg-m.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper-hover {
+    width: 350px;
+    float: none;
+    margin: 0 auto;
+    .wrapper-item {
+      .wrapper-title{
+        line-height: 64px;
+      }
+      .wrapper-content ul {
+        list-style: none;
+        font-size: 14px;
+        font-family: $gothamLight;
+        line-height: 25px;
+        text-transform: none;
+        li span{
+          font-size: 20px;
+          font-family: $gothamBold;
+        }
+        a{
+          color: #fff;
+          text-decoration: underline;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+#modal3 {
+  background-image: url('../img/modal-bg-e.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper-hover {
+    width: 350px;
+    float: none;
+    margin: 0 auto;
+    .wrapper-item {
+      .wrapper-title{
+        line-height: 64px;
+      }
+      .wrapper-content p {
+        margin-top: 95px;
+        span {
+          display: block;
+          font-size: 14px;
+          color: #fff;
+          font-family: $GothamMed;
+          width: 100%;
+          text-align: center;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
 #modal2 {
   background-image: url('../img/modal-bg-d.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  .wrapper-hover{
+  .wrapper-hover {
     left: 18%;
-    .wrapper-title{
+    .wrapper-title {
       line-height: 64px;
     }
   }
@@ -203,7 +263,8 @@
         transition: 500ms ease;
       }
       &:hover .wrapper-item {
-        background-color: #143024;
+        background-color: rgba(0, 0, 0, 0.4);
+        border: none;
         transition: 400ms ease;
         transform: scale(1.03);
       }
@@ -240,7 +301,7 @@
           line-height: 25px;
         }
         &:hover {
-          background-color: #143024;
+          background-color: rgba(0, 0, 0, 0.5);
           transition: 400ms ease;
           transform: scale(1.03);
         }
@@ -281,7 +342,7 @@
     margin: 15px 17%;
     display: none;
     position: relative;
-    background-color: #152f24;
+    background-color: rgba(0, 0, 0, 0.4);
     float: left;
     button {
       width: 200px;
@@ -327,6 +388,7 @@
 .modal_div .modal_close {
   width: 21px;
   height: 21px;
+  color: #fff;
   position: absolute;
   top: 10px;
   right: 10px;
