@@ -138,23 +138,200 @@
     z-index: 0;
   }
 
-  #tab2{
+  #tab2 {
     background-image: url("../img/events-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
   }
 
-  #tab3{
+  #tab3 {
     background-image: url("../img/digital-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
   }
-  #tab4{
+  #tab4 {
     background-image: url("../img/media-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
   }
+}
+
+#modal1 {
+  background-image: url('../img/modal-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal_div {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  .wrapper-modal {
+    width: 100%;
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: 3%;
+    .wrapper-hover {
+      position: relative;
+      display: block;
+      float: left;
+      width: 31%;
+      &:hover .modal-button {
+        display: block;
+        transition: 500ms ease;
+      }
+      &:hover .wrapper-item {
+        background-color: #143024;
+        transition: 400ms ease;
+        transform: scale(1.03);
+      }
+      .modal-button {
+        position: relative;
+        display: none;
+        width: 200px;
+        cursor: pointer;
+        height: 50px;
+        border: none;
+        margin: 0 auto;
+        outline: none;
+        border-radius: 30px;
+        background-color: #3dfbe5;
+        color: #222;
+        font-family: $gothamLight;
+        font-size: 14px;
+      }
+      &:nth-child(2) {
+        margin: 0 30px;
+      }
+      .wrapper-item {
+        height: 500px;
+        width: 100%;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        float: left;
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+        ul {
+          font-size: 13px;
+          font-family: $gothamLight;
+          line-height: 25px;
+        }
+        &:hover {
+          background-color: #143024;
+          transition: 400ms ease;
+          transform: scale(1.03);
+        }
+
+        .wrapper-title {
+          width: 100%;
+          height: 95px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          text-align: center;
+          font-size: 16px;
+          font-family: $GothamMed;
+          text-transform: uppercase;
+          padding-top: 13px;
+          box-sizing: border-box;
+          line-height: 28px;
+          color: #fff;
+          span {
+            color: #00fffc;
+            font-family: $GothamBlack;
+          }
+
+        }
+        .wrapper-content {
+          color: #fff;
+          font-size: 16px;
+          text-transform: uppercase;
+          font-family: $gothamLight;
+          h3 {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+  form {
+    width: 750px;
+    height: 100px;
+    margin: 15px 17%;
+    display: none;
+    position: relative;
+    background-color: #152f24;
+    float: left;
+    button {
+      width: 200px;
+      height: 45px;
+      border-radius: 30px;
+      background-color: #3dfbe5;
+      outline: none;
+      border: none;
+      color: #333;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: $gothamLight;
+      margin-left: 15px;
+    }
+    input {
+      margin-top: 30px;
+      margin-left: 15px;
+      height: 45px;
+      width: 235px;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 30px;
+      color: #fff;
+      &[type="text"] {
+        padding-left: 20px;
+        font-size: 14px;
+        opacity: 1;
+        font-family: $gothamLight;
+        box-sizing: border-box;
+      }
+      &[type="email"] {
+        padding-left: 20px;
+        font-size: 14px;
+        opacity: 1;
+        font-family: $gothamLight;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal_div .modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Пoдлoжкa */
+#overlay {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  background-color: transparent;
+  display: none;
+
 }
