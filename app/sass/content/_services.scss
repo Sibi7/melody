@@ -81,7 +81,14 @@
         }
       }
     }
-
+    .tabs1{
+      list-style: none;
+      border: none;
+      width: 100%;
+      float: left;
+      display: inline-flex;
+      padding-left: 0;
+    }
     button {
       width: 100px;
       height: 35px;
@@ -100,7 +107,7 @@
       }
 
     }
-    .active {
+    .active1 {
       border: 1px solid #fff;
     }
     .marketing__content_wrap-item {

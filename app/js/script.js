@@ -20,8 +20,8 @@ $(document).ready(function () {
 
 
     $('.marketing__content_wrap button').click(function (e) {
-        $('.marketing__content_wrap button').removeClass('active'); // удаляет класс у всех дочерних элем.
-        $(this).addClass('active');
+        $('.marketing__content_wrap button').removeClass('active1'); // удаляет класс у всех дочерних элем.
+        $(this).addClass('active1');
     });
 
 
@@ -53,6 +53,59 @@ jQuery(document).ready(function ($) {
         $(this).addClass('active');
         //Скрыть контент вкладки
         $('.tab_content').hide();
+
+        //Найти значение атрибута ссылки, чтобы
+        //определить активный таб контент
+        var selectTab = $(this).find('a').attr("href");
+        //Исчезновение активного контента
+        $(selectTab).fadeIn();
+        return false;
+    });
+});
+
+jQuery(document).ready(function ($) {
+    //скрыть весь контент
+    $('.tab_content1').hide();
+    //Показать контент первой вкладки
+    $('.tab_content1:first').show();
+    //Активировать первую вкладку
+    $('.tabs li:first').addClass('active');
+
+    //Событие по клику
+    $('.tabs li').click(function (event) {
+        //Удалить "active" класс
+        $('.tabs li').removeClass('active');
+        //Добавить "active" для выбранной вкладки
+        $(this).addClass('active');
+        //Скрыть контент вкладки
+        $('.tab_content').hide();
+
+        //Найти значение атрибута ссылки, чтобы
+        //определить активный таб контент
+        var selectTab = $(this).find('a').attr("href");
+        //Исчезновение активного контента
+        $(selectTab).fadeIn();
+        return false;
+    });
+});
+
+
+jQuery(document).ready(function ($) {
+    //скрыть весь контент
+    $('.tab_content1').hide();
+    //Показать контент первой вкладки
+    $('.tab_content1:first').show();
+    //Активировать первую вкладку
+    $('.tabs1 li:first').addClass('active');
+
+    //Событие по клику
+    $('.tabs1 li').click(function (event) {
+        //Удалить "active" класс
+        $('.tabs1 li').removeClass('active');
+        //Добавить "active" для выбранной вкладки
+        $(this).addClass('active');
+        //Скрыть контент вкладки
+        $('.tab_content1').hide();
 
         //Найти значение атрибута ссылки, чтобы
         //определить активный таб контент
