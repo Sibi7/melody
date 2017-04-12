@@ -120,9 +120,18 @@
       box-sizing: border-box;
       margin-right: 10px;
       cursor: pointer;
+      overflow: hidden;
+      position: relative;
       &:hover {
         transform: scale(1.03);
         transition: 300ms ease;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 10px;
       }
     }
   }
@@ -242,6 +251,14 @@
   background-image: url('../img/modal-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
 }
 
 .modal_div {
@@ -405,14 +422,5 @@
 
 /* Пoдлoжкa */
 #overlay {
-  z-index: 4;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  background-color: transparent;
-  display: none;
 
 }
