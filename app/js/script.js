@@ -1,122 +1,129 @@
 $(document).ready(function () {
+
     $(".slider").HSlider({
-// jquery easing options
         easing: "ease",
 
-// animation speed
         animationTime: 800,
 
-// display side navigation
         pagination: false,
 
-// display description
         description: true
     });
 
     $('#menu a').click(function (e) {
-        $('#menu a').removeClass('active'); // удаляет класс у всех дочерних элем.
+        $('#menu a').removeClass('active');
         $(this).addClass('active');
     });
 
 
     $('.marketing__content_wrap button').click(function (e) {
-        $('.marketing__content_wrap button').removeClass('active1'); // удаляет класс у всех дочерних элем.
+        $('.marketing__content_wrap button').removeClass('active1');
         $(this).addClass('active1');
     });
 
 
     $('.tabs a').click(function (e) {
-        $('.tabs a').removeClass('active'); // удаляет класс у всех дочерних элем.
+        $('.tabs a').removeClass('active');
         $(this).addClass('active');
     });
 
-    $( ".wrapper-hover .modal-button" ).click(function() {
-        $( "form" ).slideToggle (function() {
+    $(".wrapper-hover .modal-button").click(function () {
+        $("form").slideToggle(function () {
         });
     });
 
-});
-
-jQuery(document).ready(function ($) {
-    //скрыть весь контент
     $('.tab_content').hide();
-    //Показать контент первой вкладки
     $('.tab_content:first').show();
-    //Активировать первую вкладку
     $('.tabs li:first').addClass('active');
-
-    //Событие по клику
     $('.tabs li').click(function (event) {
-        //Удалить "active" класс
         $('.tabs li').removeClass('active');
-        //Добавить "active" для выбранной вкладки
         $(this).addClass('active');
-        //Скрыть контент вкладки
         $('.tab_content').hide();
-
-        //Найти значение атрибута ссылки, чтобы
-        //определить активный таб контент
         var selectTab = $(this).find('a').attr("href");
-        //Исчезновение активного контента
         $(selectTab).fadeIn();
         return false;
     });
-});
 
-jQuery(document).ready(function ($) {
-    //скрыть весь контент
+
     $('.tab_content1').hide();
-    //Показать контент первой вкладки
     $('.tab_content1:first').show();
-    //Активировать первую вкладку
-    $('.tabs li:first').addClass('active');
-
-    //Событие по клику
-    $('.tabs li').click(function (event) {
-        //Удалить "active" класс
-        $('.tabs li').removeClass('active');
-        //Добавить "active" для выбранной вкладки
-        $(this).addClass('active');
-        //Скрыть контент вкладки
-        $('.tab_content').hide();
-
-        //Найти значение атрибута ссылки, чтобы
-        //определить активный таб контент
-        var selectTab = $(this).find('a').attr("href");
-        //Исчезновение активного контента
-        $(selectTab).fadeIn();
-        return false;
-    });
-});
-
-
-jQuery(document).ready(function ($) {
-    //скрыть весь контент
-    $('.tab_content1').hide();
-    //Показать контент первой вкладки
-    $('.tab_content1:first').show();
-    //Активировать первую вкладку
     $('.tabs1 li:first').addClass('active');
-
-    //Событие по клику
     $('.tabs1 li').click(function (event) {
-        //Удалить "active" класс
         $('.tabs1 li').removeClass('active');
-        //Добавить "active" для выбранной вкладки
         $(this).addClass('active');
-        //Скрыть контент вкладки
         $('.tab_content1').hide();
-
-        //Найти значение атрибута ссылки, чтобы
-        //определить активный таб контент
         var selectTab = $(this).find('a').attr("href");
-        //Исчезновение активного контента
         $(selectTab).fadeIn();
         return false;
     });
+
+
+    $('.tab_content2').hide();
+    $('.tab_content2:first').show();
+    $('.tabs2 li:first').addClass('active');
+    $('.tabs2 li').click(function (event) {
+        $('.tabs2 li').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_content2').hide();
+        var selectTab = $(this).find('a').attr("href");
+        $(selectTab).fadeIn();
+        return false;
+    });
+
+
+    $('.tab_content3').hide();
+    $('.tab_content3:first').show();
+    $('.tabs3 li:first').addClass('active');
+    $('.tabs3 li').click(function (event) {
+        $('.tabs3 li').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_content3').hide();
+        var selectTab = $(this).find('a').attr("href");
+        $(selectTab).fadeIn();
+        return false;
+    });
+
+
+    $('.tab_content4').hide();
+    $('.tab_content4:first').show();
+    $('.tabs4 li:first').addClass('active');
+    $('.tabs4 li').click(function (event) {
+        $('.tabs4 li').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_content4').hide();
+        var selectTab = $(this).find('a').attr("href");
+        $(selectTab).fadeIn();
+        return false;
+    });
+
+
+    var overlay = $('#overlay');
+    var open_modal = $('.open_modal');
+    var close = $('.modal_close, #overlay');
+    var modal = $('.modal_div');
+
+    open_modal.click(function (event) {
+        event.preventDefault();
+        var div = $(this).attr('href');
+        overlay.fadeIn(400,
+            function () {
+                $(div)
+                    .css('display', 'block')
+                    .animate({opacity: 1}, 200);
+            });
+    });
+
+    close.click(function () {
+        modal
+            .animate({opacity: 0}, 200,
+                function () {
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400);
+                }
+            );
+    });
+
 });
-
-
 // var layer, w, h;
 //
 // function init() {
@@ -155,33 +162,3 @@ jQuery(document).ready(function ($) {
 // window.onload = function() {
 //     init();
 // }
-
-
-$(document).ready(function() { // зaпускaем скрипт пoсле зaгрузки всех элементoв
-    /* зaсунем срaзу все элементы в переменные, чтoбы скрипту не прихoдилoсь их кaждый рaз искaть при кликaх */
-    var overlay = $('#overlay'); // пoдлoжкa, дoлжнa быть oднa нa стрaнице
-    var open_modal = $('.open_modal'); // все ссылки, кoтoрые будут oткрывaть oкнa
-    var close = $('.modal_close, #overlay'); // все, чтo зaкрывaет мoдaльнoе oкнo, т.е. крестик и oверлэй-пoдлoжкa
-    var modal = $('.modal_div'); // все скрытые мoдaльные oкнa
-
-    open_modal.click( function(event){ // лoвим клик пo ссылке с клaссoм open_modal
-        event.preventDefault(); // вырубaем стaндaртнoе пoведение
-        var div = $(this).attr('href'); // вoзьмем стрoку с селектoрoм у кликнутoй ссылки
-        overlay.fadeIn(400, //пoкaзывaем oверлэй
-            function(){ // пoсле oкoнчaния пoкaзывaния oверлэя
-                $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
-                    .css('display', 'block')
-                    .animate({opacity: 1}, 200); // плaвнo пoкaзывaем
-            });
-    });
-
-    close.click( function(){ // лoвим клик пo крестику или oверлэю
-        modal // все мoдaльные oкнa
-            .animate({opacity: 0}, 200, // плaвнo прячем
-                function(){ // пoсле этoгo
-                    $(this).css('display', 'none');
-                    overlay.fadeOut(400); // прячем пoдлoжку
-                }
-            );
-    });
-});
