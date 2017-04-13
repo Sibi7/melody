@@ -123,6 +123,9 @@ $(document).ready(function () {
         $(".head").show();
     });
 
+
+
+
 });
 var layer, w, h;
 

@@ -15,7 +15,8 @@
     margin: 0;
 
     li {
-      display: inline-block;
+      display: block;
+      float: left;
       font-size: 20px;
       font-family: $gothamLight;
       line-height: 30px;
@@ -32,17 +33,17 @@
       }
       .active {
         color: #3dfbe5;
-        height: 50px;
-        position: absolute;
+        box-sizing: border-box;
         &::after{
           width: 15px;
           height: 15px;
           border-radius: 50%;
           display: block;
           background-color: #3dfbe5;
-          position: absolute;
-          top: -39px;
-          left: 35px;
+          position: relative;
+          bottom: -13px;
+          text-align: center;
+          left: 40%;
           content: "";
         }
       }
