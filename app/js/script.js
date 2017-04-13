@@ -107,20 +107,19 @@ $(document).ready(function () {
         var div = $(this).attr('href');
         overlay.fadeIn(400,
             function () {
-                $(div)
-                    .css('display', 'block')
-                    .animate({opacity: 1}, 200);
+            $(".head").hide();
+                $(div).css('display', 'block').animate({opacity: 1}, 200);
             });
     });
 
     close.click(function () {
-        modal
-            .animate({opacity: 0}, 200,
+        modal.animate({opacity: 0}, 200,
                 function () {
                     $(this).css('display', 'none');
                     overlay.fadeOut(400);
                 }
             );
+        $(".head").show();
     });
 
 });
