@@ -16,8 +16,8 @@ $(document).ready(function () {
     });
 
 
-    $('.marketing__content_wrap button').click(function (e) {
-        $('.marketing__content_wrap button').removeClass('active1');
+    $('.marketing__content_wrap .button').click(function (e) {
+        $('.marketing__content_wrap .button').removeClass('active1');
         $(this).addClass('active1');
     });
 
@@ -124,41 +124,41 @@ $(document).ready(function () {
     });
 
 });
-// var layer, w, h;
-//
-// function init() {
-//     w = (window.innerWidth  || document.documentElement.clientWidth)  * 0.5;
-//     h = (window.innerHeight || document.documentElement.clientHeight) * 0.5;
-//     layer = document.getElementById('melody-note');
-//     parallaxMove();
-// }
-//
-// function parallaxMove() {
-//     var centerX = w - layer.offsetWidth  * 0.5;
-//     var centerY = h - layer.offsetHeight * 0.5;
-//
-//     var x0 = layer.offsetLeft;
-//     var y0 = layer.offsetTop;
-//
-//     function getX(e) {
-//         return x0 + (e.pageX - centerX) * 0.2;
-//     }
-//
-//     function getY(e) {
-//         return y0 + (e.pageY - centerY) * 0.2;
-//     }
-//
-//     document.onmousemove = function(e) {
-//
-//         var x = getX(e);
-//         var y = getY(e);
-//
-//         layer.style.left = x + "px";
-//          layer.style.top  = y + "px";
-//
-//     }
-//
-// }
-// window.onload = function() {
-//     init();
-// }
+var layer, w, h;
+
+function init() {
+    w = (window.innerWidth  || document.documentElement.clientWidth)  * 0.5;
+    h = (window.innerHeight || document.documentElement.clientHeight) * 0.5;
+    layer = document.getElementById('melody-note');
+    parallaxMove();
+}
+
+function parallaxMove() {
+    var centerX = w - layer.offsetWidth  * 0.5;
+    var centerY = h - layer.offsetHeight * 0.5;
+
+    var x0 = layer.offsetLeft;
+    var y0 = layer.offsetTop;
+
+    function getX(e) {
+        return x0 + (e.pageX - centerX) * 0.2;
+    }
+
+    function getY(e) {
+        return y0 + (e.pageY - centerY) * 0.2;
+    }
+
+    document.onmousemove = function(e) {
+
+        var x = getX(e);
+        var y = getY(e);
+
+        layer.style.left = x + "px";
+         layer.style.top  = y + "px";
+
+    }
+
+}
+window.onload = function() {
+    init();
+}
