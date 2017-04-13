@@ -28,7 +28,8 @@ $(document).ready(function () {
     });
 
     $(".wrapper-hover .modal-button").click(function () {
-        $("form").slideToggle(function () {
+        $(".wrapper-modal .form").slideToggle(function () {
+            return false;
         });
     });
 

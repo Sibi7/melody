@@ -85,7 +85,7 @@
         }
       }
     }
-    .tabs1, .tabs2, .tabs3, .tabs4{
+    .tabs1, .tabs2, .tabs3, .tabs4 {
       list-style: none;
       border: none;
       width: 100%;
@@ -127,7 +127,7 @@
       cursor: pointer;
       overflow: hidden;
       position: relative;
-      iframe{
+      iframe {
         width: 100%;
         height: 100%;
       }
@@ -135,7 +135,7 @@
         transform: scale(1.03);
         transition: 300ms ease;
       }
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -184,6 +184,67 @@
   }
 }
 
+#modal5 {
+  background-image: url('../img/modal-bg-m.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+    .form-head {
+      width: 266px;
+      height: 400px;
+      margin: 15% auto;
+      display: block;
+      position: relative;
+      background-color: rgba(0, 0, 0, .4);
+      float: none;
+      input:first-child{
+        margin-top: 80px;
+      }
+      input {
+        margin-top: 30px;
+        margin-left: 15px;
+        height: 45px;
+        width: 235px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 30px;
+        color: #fff;
+        &[type="text"] {
+          padding-left: 20px;
+          font-size: 14px;
+          opacity: 1;
+          font-family: $gothamLight;
+          box-sizing: border-box;
+        }
+        &[type="email"] {
+          padding-left: 20px;
+          font-size: 14px;
+          opacity: 1;
+          font-family: $gothamLight;
+          box-sizing: border-box;
+        }
+      }
+      .form-head-button{
+        margin: 30px auto;
+        display: block;
+        position: relative;
+        width: 200px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 49px;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        background-color: #3dfbe5;
+        color: #222;
+        font-family: $gothamLight;
+        font-size: 14px;
+      }
+
+    }
+
+}
+
 #modal4 {
   background-image: url('../img/modal-bg-m.jpg');
   background-repeat: no-repeat;
@@ -193,7 +254,7 @@
     float: none;
     margin: 0 auto;
     .wrapper-item {
-      .wrapper-title{
+      .wrapper-title {
         line-height: 64px;
       }
       .wrapper-content ul {
@@ -202,11 +263,11 @@
         font-family: $gothamLight;
         line-height: 25px;
         text-transform: none;
-        li span{
+        li span {
           font-size: 20px;
           font-family: $gothamBold;
         }
-        a{
+        a {
           color: #fff;
           text-decoration: underline;
           font-weight: 800;
@@ -225,7 +286,7 @@
     float: none;
     margin: 0 auto;
     .wrapper-item {
-      .wrapper-title{
+      .wrapper-title {
         line-height: 64px;
       }
       .wrapper-content p {
@@ -369,7 +430,7 @@
       }
     }
   }
-  form {
+  .form {
     width: 750px;
     height: 100px;
     margin: 15px 17%;

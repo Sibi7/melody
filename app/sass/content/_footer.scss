@@ -25,26 +25,31 @@
           color: #3dfbe5;
           transition: 300ms ease;
         }
+
       }
       &:nth-child(2) {
         margin: 0 446px;
       }
       .active {
         color: #3dfbe5;
+        height: 50px;
+        position: absolute;
+        &::after{
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          display: block;
+          background-color: #3dfbe5;
+          position: absolute;
+          top: -39px;
+          left: 35px;
+          content: "";
+        }
       }
 
     }
 
   }
 }
-  .pull {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: block;
-    background-color: #3dfbe5;
-    position: absolute;
-    top: -7px;
-    left: 35px;
-  }
+
 
