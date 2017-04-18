@@ -1,25 +1,25 @@
 $(document).ready(function () {
 
-    $(".slider").HSlider({
+    $('.slider').HSlider({
         easing: "ease",
-
         animationTime: 800,
-
         pagination: false,
-
         description: true
     });
+
 
     $('#menu a').click(function (e) {
         $('#menu a').removeClass('active');
         $(this).addClass('active');
     });
-
-
+        
+    
     $('.marketing__content_wrap .button').click(function (e) {
         $('.marketing__content_wrap .button').removeClass('active1');
         $(this).addClass('active1');
     });
+
+    /*scroll*/
 
 
     $('.tabs a').click(function (e) {
